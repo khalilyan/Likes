@@ -1,0 +1,38 @@
+#LikeditemContain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 60px 20px 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(130, 130, 130, 0.498);
+}
+#LikedauthorContain{
+    width: 97.5%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0 10px 15px;
+    gap: 20px;
+}
+#user{
+    border-radius: 40px;
+}
+#LikedauthorName{
+    cursor: pointer;
+    font-size: large;
+    font-weight: 640;
+    color: rgb(78, 55, 0);
+}
+#Likelikedcontain{
+    display: flex;
+    zoom: 140%;
+    flex-direction: row;
+    justify-content: center;
+}
+.deleteicon{
+    color: rgb(201, 18, 18);
+}
+

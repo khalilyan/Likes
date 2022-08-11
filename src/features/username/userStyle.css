@@ -1,0 +1,77 @@
+#setuserContain{
+    display: flex;
+    justify-content: center;
+    background-color: none;
+}
+.container{
+    margin: 40px;
+    margin-top: 110px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 500px;
+}
+#usernam{
+    height: 35px;
+    font-size: 27px;
+    width: 350px;
+    padding-left: 10px;
+}
+#choose{
+    opacity: 0.001;
+    z-index: 5;
+    width: 35px;
+    height: 20px;
+    position: relative;
+    left: 20px;
+    top: 2px;
+}
+#upload{
+    width: 40px;
+    position: relative;
+    right: 40px;
+    height: 40px;
+    margin-left: 5px;
+    color: rgba(255, 255, 254, 0.774);
+}
+
+@media (max-width:764px){
+    #setuserContain{
+        zoom: 80%
+    }
+}
+
+@media (max-width:675px){
+    #setuserContain{
+        zoom: 70%;
+        padding-top: 20px;
+        
+    }
+}
+@media (max-width:675px){
+    #setuserContain{
+        padding-top: 25px;        
+    }
+}
+@media (max-width:408px){
+    #usernam{
+        width: 270px;        
+    }
+    .container{
+        justify-content: space-evenly;
+    }
+}
+@media (max-width:346px){
+    #usernam{
+        width: 250px;        
+    }
+}
+@media (max-width:325px){
+    #usernam{
+        width: 200px;        
+    }
+}
+

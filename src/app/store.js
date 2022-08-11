@@ -1,8 +1,35 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import PostsSlice from '../features/posts/PostsSlice';
+import storage from 'redux-persist/lib/storage' 
+import {
+  persistStore,
+  persistReducer,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from 'redux-persist'
 
-export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
-});
+
+const persistConfig = {
+  key: 'posts',
+  storage,
+}
+
+const persistedReducer = persistReducer(persistConfig, PostsSlice)
+
+const store = configureStore({
+   reducer: persistedReducer,
+   middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware({
+         serializableCheck: {
+         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+     },
+   }),
+  });
+
+
+export const persistor = persistStore(store);
+export default store;

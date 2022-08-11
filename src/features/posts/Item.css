@@ -1,0 +1,108 @@
+#itemContain{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px 60px 20px 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(130, 130, 130, 0.498);
+}
+#authorContain{
+    width: 97.5%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0 10px 15px;
+    gap: 20px;
+}
+#user{
+    border-radius: 40px;
+    cursor: pointer;
+}
+#likecontain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.likebtn{
+    zoom: 130%;
+}
+.heart{
+    color: rgb(78, 55, 0);
+}
+#authorName{
+    cursor: pointer;
+    font-size: large;
+    font-weight: 640;
+    color: rgb(78, 55, 0);
+}
+.comment{
+    font-size: 20px;
+    resize: none;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    width: 500px;
+    stroke-linejoin: bevel;
+    padding-left: 15px;
+}
+#commentsContain{
+    margin-left: 20px;
+    margin-top: 15px;
+    color: rgb(39, 39, 39);
+    display: flex;
+    max-width: 600px;
+    flex-direction: column;
+}
+#comItem{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+#creator{
+    margin: 2px;
+    font-weight: 630;
+    color: rgb(0, 0, 0);
+}
+#text{
+    padding: 3px;
+    margin: 2px;
+    font-weight: 450;
+    max-width: 500px;
+    overflow-wrap: break-word;   
+}
+#comdelbtn{
+    background-color: white;
+    color: red;
+    border: 1px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+@media (max-width:530px){
+    #comdelbtn{
+        font-size: 30px;
+    }
+    .likebtn{
+        zoom: 160%;
+    }
+    #creator{
+       font-size: 28px;
+    }
+    #text{
+    font-weight: 400;
+    font-size: 25px;
+    }
+    #comItem{
+        font-size: 20px;
+    }
+    .comment{
+        font-size: 27px;
+    }
+}

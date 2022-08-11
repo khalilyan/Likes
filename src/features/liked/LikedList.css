@@ -1,0 +1,46 @@
+#LikedlistContain{
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(239, 239, 239, 0.317);
+}
+@media (max-width:768px){
+    #LikedlistContain{
+        zoom: 90%
+    }
+}
+
+@media (max-width:675px){
+    #LikedlistContain{
+        zoom: 80%;
+    }
+}
+@media (max-width:610px){
+    #LikedlistContain{
+        zoom: 70%;
+    }
+}
+@media (max-width:530px){
+    #LikedlistContain{
+        zoom: 60%;
+    }
+}
+@media (max-width:460px){
+    #LikedlistContain{
+        zoom: 50%;
+    }
+}
+@media (max-width:375px){
+    #LikedlistContain{
+        zoom: 45%;
+    }
+}
+@media (max-width:325px){
+    #LikedlistContain{
+        zoom: 35%;
+    }
+}
